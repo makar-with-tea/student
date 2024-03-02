@@ -2,19 +2,17 @@ package ru.hse.product.storage.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
-import ru.hse.product.storage.api.ProductApi;
-import ru.hse.product.storage.api.dto.DetailedProduct;
-import ru.hse.product.storage.api.dto.Product;
-import ru.hse.product.storage.api.dto.ProductList;
+import ru.hse.product.storage.api.StudentApi;
+import ru.hse.product.storage.api.dto.Student;
 
 import java.util.List;
 import java.util.UUID;
 
 @FeignClient(name = "product-storage", url = "${product.storage.url}")
-public interface ProductClient extends ProductApi {
+public interface ProductClient extends StudentApi {
 
     @GetMapping("/api/v1/product")
-    ProductList findProducts(
+    List<Student> findProducts(
             @RequestParam(required = false, name = "name", defaultValue = "") String name,
             @RequestParam(required = false, name = "id") List<UUID> ids);
 

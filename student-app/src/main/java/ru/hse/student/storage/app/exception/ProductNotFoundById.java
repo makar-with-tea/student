@@ -1,4 +1,4 @@
-package ru.hse.product.storage.app.exception;
+package ru.hse.student.storage.app.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

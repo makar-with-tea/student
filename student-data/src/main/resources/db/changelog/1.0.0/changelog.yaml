@@ -1,4 +1,4 @@
 databaseChangeLog:
   - include:
-      file: product.sql
+      file: student.sql
       relativeToChangelogFile: true
