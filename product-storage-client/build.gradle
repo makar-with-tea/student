@@ -1,0 +1,15 @@
+apply plugin: 'maven-publish'
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':product-storage-api')
+    api 'org.springframework.cloud:spring-cloud-starter-openfeign'
+}
+
+publishing {
+    publications {
+        productStorageClient(MavenPublication) {
+            from components.java
+        }
+    }
+}
