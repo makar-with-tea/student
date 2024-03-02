@@ -6,9 +6,9 @@ pluginManagement {
     }
 }
 
-include('product-storage-api')
-include('product-storage-app')
-include('product-storage-client')
-include('product-storage-client-starter')
-include('product-storage-data')
-include('product-storage-data-api')
+include('student-api')
+include('student-app')
+include('student-client')
+include('student-client-starter')
+include('student-data')
+include('student-data-api')

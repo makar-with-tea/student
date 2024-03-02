@@ -1,0 +1,6 @@
+dependencies {
+    implementation project(':student-data-api')
+    implementation 'org.liquibase:liquibase-core'
+    implementation 'org.postgresql:postgresql'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+}

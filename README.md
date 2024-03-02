@@ -24,10 +24,10 @@ cd docker && sudo docker compose up -d && cd .. && ./gradlew bootRun
 
 Проект состоит из 4-ех модулей
 
-* [product-storage-api](product-storage-api)
-* [product-storage-app](product-storage-app)
-* [product-storage-data](product-storage-data)
-* [product-storage-data-api](product-storage-data-api)
+* [product-storage-api](student-api)
+* [product-storage-app](student-app)
+* [product-storage-data](student-data)
+* [product-storage-data-api](student-data-api)
 
 кроме того, в корне проекта содержатся такие вспомогательные файлы/директории:
 
